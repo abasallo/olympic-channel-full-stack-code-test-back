@@ -50,7 +50,7 @@ Runs the app for production (expects real Postgres database and configuration th
 
 This assumes Docker and Docker Compose are installed.
 
-Also, copy and rename .env.docker.example to .env.docker and edit for configuration specifics (Database URL, Email, etc)
+Also, copy and rename .env.docker.example to .env.docker and edit for configuration specifics (URL, Database, etc)
 
 This file contains the configuration to run the server as in production, but with a local Docker (that can be later deployed for real).
 
