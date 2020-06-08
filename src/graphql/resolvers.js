@@ -46,7 +46,7 @@ const getMappedAthlete = async (resolvedModel, id) => {
       photo: Base64.encode(photo.photo),
       mimeType: photo.mime_type
     },
-    athleteResults: mappedAthleteResults
+    athleteResults: mappedAthleteResults.sort((a, b) => (a.game.year < b.game.year ? 1 : b.game.year < a.game.year ? -1 : 0))
   }
 }
 
@@ -62,9 +62,12 @@ export default {
         athletesPerGame.forEach((athlete) => {
           mappedAthletesPerGame.push(getMappedAthlete(resolvedModel, athlete.athlete_id))
         })
-        result.push({ game: { id: game.game_id, city: game.city, year: game.year }, athletes: mappedAthletesPerGame })
+        result.push({
+          game: { id: game.game_id, city: game.city, year: game.year },
+          athletes: mappedAthletesPerGame
+        })
       }
-      return result
+      return result.sort((a, b) => (a.game.year < b.game.year ? 1 : b.game.year < a.game.year ? -1 : 0))
     },
     getAthlete: async (parent, { id }, { model }) => getMappedAthlete(await model, id)
   }
