@@ -1,4 +1,6 @@
-import { getAllGames, getAthleteResultsByGameId, getMappedAthlete } from './resolver-helper'
+import { getAllGames } from '../services/Game'
+import { getAthleteResultsByGameId } from '../services/AthleteResults'
+import { getMappedAthlete } from '../services/Athlete'
 
 export default {
   Query: {

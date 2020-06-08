@@ -4,9 +4,9 @@ const getAthleteById = async (resolvedModel, id) => await resolvedModel.Athlete.
 
 const getPhotoById = async (resolvedModel, id) => await resolvedModel.AthletePhoto.findOne({ where: { photo_id: id } })
 
-const getGameById = async (resolvedModel, id) => await resolvedModel.Game.findOne({ where: { game_id: id } })
-
 const getAthleteResultsById = async (resolvedModel, id) => await resolvedModel.AthleteResult.findAll({ where: { athlete_id: id } })
+
+const getGameById = async (resolvedModel, id) => await resolvedModel.Game.findOne({ where: { game_id: id } })
 
 const getMappedAthleteResults = async (resolvedModel, athleteResults) => {
   const mappedAthleteResults = []
@@ -22,11 +22,6 @@ const getMappedAthleteResults = async (resolvedModel, athleteResults) => {
   }
   return mappedAthleteResults
 }
-
-export const getAllGames = async (resolvedModel) => await resolvedModel.Game.findAll()
-
-export const getAthleteResultsByGameId = async (resolvedModel, gameId) =>
-  await resolvedModel.AthleteResult.findAll({ where: { game_id: gameId } })
 
 export const getMappedAthlete = async (resolvedModel, id) => {
   const athlete = await getAthleteById(resolvedModel, id)
