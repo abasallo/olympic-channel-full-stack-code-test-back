@@ -4,7 +4,7 @@ import Sequelize from 'sequelize'
 
 import { initializeModel } from './model'
 
-export const connectWithOptions = (dbDialect, dbPath, dbPoolMax, dbPoolMin, dbPoolIdle) => {
+const connectWithOptions = (dbDialect, dbPath, dbPoolMax, dbPoolMin, dbPoolIdle) => {
   return new Sequelize({
     dialect: dbDialect,
     storage: dbPath,

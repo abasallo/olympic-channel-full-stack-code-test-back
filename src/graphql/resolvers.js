@@ -4,9 +4,8 @@ export default {
   Query: {
     getAthletesByGame: async (parent, args, { model }) => {
       const resolvedModel = await model
-      const games = await getAllGames(resolvedModel)
       const result = []
-      for (const game of games) {
+      for (const game of await getAllGames(resolvedModel)) {
         const athletesPerGame = await getAthleteResultsByGameId(resolvedModel, game.game_id)
         const mappedAthletesPerGame = []
         athletesPerGame.forEach((athlete) => {
