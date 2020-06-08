@@ -15,6 +15,20 @@ Object {
       Object {
         "athletes": Array [
           Object {
+            "id": "1",
+            "name": "Arianna",
+            "surname": "Fontana",
+          },
+        ],
+        "game": Object {
+          "city": "Pyeongchang",
+          "id": "4",
+          "year": 2018,
+        },
+      },
+      Object {
+        "athletes": Array [
+          Object {
             "id": "2",
             "name": "Lidia",
             "surname": "Valentin Perez",
@@ -44,6 +58,25 @@ Object {
           "city": "Rio de Janeiro",
           "id": "2",
           "year": 2016,
+        },
+      },
+      Object {
+        "athletes": Array [
+          Object {
+            "id": "1",
+            "name": "Arianna",
+            "surname": "Fontana",
+          },
+          Object {
+            "id": "18",
+            "name": "Noriaki",
+            "surname": "Kasai",
+          },
+        ],
+        "game": Object {
+          "city": "Sochi",
+          "id": "5",
+          "year": 2014,
         },
       },
       Object {
@@ -89,56 +122,9 @@ Object {
           },
         ],
         "game": Object {
-          "city": "Pyeongchang",
-          "id": "4",
-          "year": 2018,
-        },
-      },
-      Object {
-        "athletes": Array [
-          Object {
-            "id": "1",
-            "name": "Arianna",
-            "surname": "Fontana",
-          },
-          Object {
-            "id": "18",
-            "name": "Noriaki",
-            "surname": "Kasai",
-          },
-        ],
-        "game": Object {
-          "city": "Sochi",
-          "id": "5",
-          "year": 2014,
-        },
-      },
-      Object {
-        "athletes": Array [
-          Object {
-            "id": "1",
-            "name": "Arianna",
-            "surname": "Fontana",
-          },
-        ],
-        "game": Object {
           "city": "Vancouver",
           "id": "6",
           "year": 2010,
-        },
-      },
-      Object {
-        "athletes": Array [
-          Object {
-            "id": "1",
-            "name": "Arianna",
-            "surname": "Fontana",
-          },
-        ],
-        "game": Object {
-          "city": "Turin",
-          "id": "7",
-          "year": 2006,
         },
       },
       Object {
@@ -168,6 +154,20 @@ Object {
           "city": "Beijing",
           "id": "8",
           "year": 2008,
+        },
+      },
+      Object {
+        "athletes": Array [
+          Object {
+            "id": "1",
+            "name": "Arianna",
+            "surname": "Fontana",
+          },
+        ],
+        "game": Object {
+          "city": "Turin",
+          "id": "7",
+          "year": 2006,
         },
       },
       Object {
